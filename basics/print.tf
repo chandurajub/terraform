@@ -15,7 +15,7 @@ variable "c" {
 }
 
 variable "list" {
-  default = [a,b,c]
+  default = ["a","b","c"]
 }
 
 variable "map" {
