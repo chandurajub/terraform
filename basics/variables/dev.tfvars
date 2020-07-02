@@ -1,1 +1,1 @@
-sample_tfvars = development
+sample_tfvars = "development"
