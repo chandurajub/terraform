@@ -7,9 +7,8 @@ variable "sample_export" {
 variable "sample_tfvars" {
 
 }
-output "sample_input" {
-  value = var.sample_input
-}
+
+
 output "sample_var" {
   value = var.sample_var
 }
