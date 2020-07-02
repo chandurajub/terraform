@@ -10,7 +10,8 @@ provisioner "remote-exec" {
     password = "DevOps321"
     host = self.public_ip
   }
-  inline = ["mdir abc"
+  inline = ["mdir abc",
+    "mkdir hello"
            ]
 }
 
