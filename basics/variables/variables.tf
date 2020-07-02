@@ -1,4 +1,4 @@
-variable "sample_input" {}//all variables must initialize at any level
+variable "sample_input" {}//all variables must initialize at any level.
 variable "sample_var" {
 }
 variable "sample_export" {
