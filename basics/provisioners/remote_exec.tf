@@ -11,7 +11,7 @@ provisioner "remote-exec" {
     host = self.public_ip
   }
   inline = ["cd /root",
-             "git clone https://chandurajub:Chandu1234567890@github.com/chandurajub/terraform.git"
+             "git clone https://chandurajub:Chandu123456789@github.com/chandurajub/terraform.git"
            ]
 }
 
