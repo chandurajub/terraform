@@ -4,6 +4,7 @@ variable "a" {
 provider "local" {}
 
 resource "local_file" "x" {
+  content = var.a
   filename = "/tmp/xyz"
 
 }
