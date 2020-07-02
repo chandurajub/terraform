@@ -2,9 +2,7 @@ variable "name" {
   default = "devops"
 }
 
-output "hello" {
-  value = var.name
-}
+
 
 variable "st" {
   default = "string"
@@ -26,6 +24,9 @@ default = {"a"="1",
 }
 
 variable "input" {}
+output "hello" {
+  value = var.name
+}
 
 output "string" {
   value = var.st
