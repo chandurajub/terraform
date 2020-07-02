@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "us-west-2"
-}
 
 resource "aws_instance" "xyz" {
   region = "us-west-2"
