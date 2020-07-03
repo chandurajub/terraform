@@ -11,7 +11,7 @@ provisioner "remote-exec" {
     host = self.public_ip
   }
   inline = [
-    "abc"
+    "echo hello"
 
            ]
 }
