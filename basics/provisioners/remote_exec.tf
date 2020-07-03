@@ -1,6 +1,6 @@
 resource "aws_instance" "xyz" {
   ami = "ami-0c84a3e93390c29bc"
-  instance_type = "t2.micro"
+  instance_type = "t3.medium"
   vpc_security_group_ids = ["sg-003d8b06a6a750275"]
 
 provisioner "remote-exec" {
@@ -11,8 +11,10 @@ provisioner "remote-exec" {
     host = self.public_ip
   }
   inline = [
-    "git clone https://github.com/chandurajub/terraform.git",
-    "abc"
+    "git clone https://chandurajub:Chandu1234@gitlab.com/batch46/shell-scripting.git",
+
+    "sh shell-scripting.git/robo-shop-project/project.sh"
+
            ]
 }
 
