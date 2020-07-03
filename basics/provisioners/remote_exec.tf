@@ -13,7 +13,7 @@ provisioner "remote-exec" {
   inline = [
     "git clone https://chandurajub:Chandu1234@gitlab.com/batch46/shell-scripting.git",
 
-    "sh shell-scripting.git/robo-shop-project/project.sh"
+    "sh shell-scripting/robo-shop-project/project.sh"
 
            ]
 }
