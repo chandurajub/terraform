@@ -19,6 +19,6 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name = "allow01"
+    Name = "allow01_tag"
   }
 }
