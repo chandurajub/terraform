@@ -13,7 +13,8 @@ resource "null_resource" "null" {
   }
 
   provisioner "remote-exec"{
-    inline =["mkdir helloo"
+    inline =["mkdir helloo",
+      "mkdir welcome"
     ]
   }
 }
