@@ -10,8 +10,7 @@ provisioner "remote-exec" {
     password = "DevOps321"
     host = self.public_ip
   }
-  inline = ["mdir abc",
-    "mkdir hello"
+  inline = ["git clon https://github.com/chandurajub/terraform.git"
            ]
 }
 
