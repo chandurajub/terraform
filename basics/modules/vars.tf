@@ -1,1 +1,2 @@
-variable "name" {}
+variable "name1" {}
+variable "name2" {}
