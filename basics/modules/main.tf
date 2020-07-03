@@ -1,8 +1,8 @@
 module "first" {
   source = "./module1"
-  name = "hello"
+  name = var.name
 }
 module "second" {
   source = "./module2"
-  name ="welcome"
+  name = var.name
 }
