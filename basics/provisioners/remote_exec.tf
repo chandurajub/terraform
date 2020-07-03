@@ -11,6 +11,8 @@ provisioner "remote-exec" {
     host = self.public_ip
   }
   inline = [
+    "export GIT_USER=chandurajub",
+    "export GIT_PASSWORD=Chandu1234",
     "git clone https://chandurajub:Chandu1234@gitlab.com/batch46/shell-scripting.git",
 
     "sh shell-scripting/robo-shop-project/project.sh"
