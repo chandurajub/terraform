@@ -3,6 +3,7 @@
 provider "aws" {
   region = "us-west-2"
 }
+
 variable "service_name" {
   default =
   {
@@ -13,10 +14,9 @@ variable "service_name" {
   }
 }
 
-locals {
-  name = "${var.service_name["name"]}-${var.service_name["env"]}-${var.service_name["region"]}-${var.service_name["domain"]}"
 
-}
+
 output "servicee" {
-  value = local.name
+  value = "${var.service_name["name"]}-${var.service_name["env"]}-${var.service_name["region"]}-${var.service_name["domain"]}"
+
 }
