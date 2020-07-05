@@ -11,5 +11,5 @@ variable "service_name" {
   env = "dev"
 }
 output "service_name" {
-  value = var.service_name["name"]-var.service_name["env"]-var.service_name["region"]-var.service_name["domain"]
+  value = var.service_name["name"]
 }
