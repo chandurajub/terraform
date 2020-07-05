@@ -7,7 +7,7 @@ locals {
 variable "service_name" {
   name = "cart"
   region = "us-west-2"
-  domain ="devops.in"
+  domain = "devops.in"
   env = "dev"
 }
 output "service_name" {
