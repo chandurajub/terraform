@@ -5,9 +5,9 @@
 variable "service_name" {
   default =
   {
-    name = "cart"
-    region = "us-west-2"
-    domain = "devops.in"
+    name = "cart",
+    region = "us-west-2",
+    domain = "devops.in",
     env = "dev"
   }
 }
