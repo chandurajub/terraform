@@ -12,7 +12,7 @@ variable "service_name" {
 }
 
 locals {
-  name = var.service_name["name"]-var.service_name["env"]-var.service_name["region"]-var.service_name["domain"]
+  name = "${var.service_name["name"]}-${var.service_name["env"]}-${var.service_name["region"]}-${var.service_name["domain"]}"
 
 }
 output "servicee" {
