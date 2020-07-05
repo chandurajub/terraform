@@ -3,12 +3,15 @@
 
 
 variable "service_name" {
-  default = "hello"
+  default = {
+    name = "hello"
+    env  =  "dev"
+  }
 
 }
 
 locals {
-  name = var.service_name
+  name = "${var.service_name["name"]}-${var.service_name["env"]}"
 
 }
 output "servicee" {
