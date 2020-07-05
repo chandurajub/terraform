@@ -4,7 +4,7 @@ provider "aws" {
   region = "us-west-2"
 }
 variable "service_name" {
-  default=
+  default =
   {
     name = "cart",
     region = "us-west-2",
