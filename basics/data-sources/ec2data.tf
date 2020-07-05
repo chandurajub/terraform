@@ -7,6 +7,6 @@ provider "aws" {
   region = "us-west-2"
 }
 
-output "sample" {
+output "samplee" {
   value = data.aws_instance.foo.public_ip
 }
