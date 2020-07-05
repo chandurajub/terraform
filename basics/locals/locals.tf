@@ -3,12 +3,19 @@
 
 
 variable "service_name" {
-  default = "hello"
-
+  default =
+  {
+    name = "cart",
+    region = "us-west-2",
+    domain = "devops.in",
+    env = "dev"
+  }
 }
 
+locals {
+  name = "${var.service_name["name"]}-${var.service_name["env"]}-${var.service_name["region"]}-${var.service_name["domain"]}"
 
-
+}
 output "servicee" {
-  value = var.service_name
+  value = local.name
 }
