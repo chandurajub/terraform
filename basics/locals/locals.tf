@@ -15,7 +15,6 @@ locals {
   name = "${var.service_name["name"]}-${var.service_name["env"]}-${var.service_name["region"]}-${var.service_name["domain"]}"
 
 }
-output "servicee"
-{
+output "servicee" {
   value = local.name
 }
