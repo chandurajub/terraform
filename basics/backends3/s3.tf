@@ -1,19 +1,19 @@
 
 
-data "terraform_remote_state" "network" {
+/*data "terraform_remote_state" "network" {
   backend = "s3"
   config = {
     bucket = "masterbucket01"
     key    = "sample/state.tf"
     region = "us-west-2"
   }
-}
+}*/
 terraform {
   backend "s3" {
     bucket = "masterbucket01"
     key    = "sample/state.tf"
     region = "us-west-2"
-    dynamodb_table = "helloo"
+
   }
 }
 
