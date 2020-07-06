@@ -13,6 +13,7 @@ terraform {
     bucket = "masterbucket01"
     key    = "sample/state.tf"
     region = "us-west-2"
+    dynamodb_table = "helloo"
 
   }
 }
@@ -98,5 +99,9 @@ resource "null_resource" "null17" {
     command = "sleep 90"
   }
 }
-
+resource "null_resource" "null18" {
+  provisioner "local-exec" {
+    command = "sleep 90"
+  }
+}
 
