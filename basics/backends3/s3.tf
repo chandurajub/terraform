@@ -8,13 +8,6 @@ data "terraform_remote_state" "network" {
     region = "us-west-2"
   }
 }
-terraform {
-  backend "s3" {
-    bucket = "masterbucket01"
-    key    = "sample/state.tf"
-    region = "us-west-2"
-  }
-}
 
 
 resource "null_resource" "null" {
@@ -57,4 +50,10 @@ resource "null_resource" "null07" {
     command = "sleep 90"
   }
 }
+resource "null_resource" "null08" {
+  provisioner "local-exec" {
+    command = "sleep 90"
+  }
+}
+
 
