@@ -13,6 +13,7 @@ terraform {
     bucket = "masterbucket01"
     key    = "sample/state.tf"
     region = "us-west-2"
+    dynamodb_table = "helloo"
   }
 }
 
