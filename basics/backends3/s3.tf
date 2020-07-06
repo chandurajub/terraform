@@ -8,6 +8,13 @@ data "terraform_remote_state" "network" {
     region = "us-west-2"
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "masterbucket01"
+    key    = "sample/state.tf"
+    region = "us-west-2"
+  }
+}
 
 
 resource "null_resource" "null" {
