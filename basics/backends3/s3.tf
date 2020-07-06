@@ -52,4 +52,9 @@ resource "null_resource" "null06" {
     command = "sleep 90"
   }
 }
+resource "null_resource" "null07" {
+  provisioner "local-exec" {
+    command = "sleep 90"
+  }
+}
 
