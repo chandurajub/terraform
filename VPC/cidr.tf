@@ -1,6 +1,0 @@
-variable "cidr" {
-
-}
-variable "tags" {
-
-}
